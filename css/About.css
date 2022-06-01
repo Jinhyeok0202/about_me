@@ -1,0 +1,204 @@
+#about {
+  position: relative;
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  background-color: #ab88a0;
+}
+
+#about .img_box {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+#about .img_box img {
+  height: 100%;
+}
+
+#about .introduction {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#about h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#about .about_profile {
+  margin: 0 auto;
+  padding: 30px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+  width: 300px;
+}
+
+@keyframes about_slide {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes about_backslide {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+}
+
+#about .desc_box1 {
+  margin-bottom: 20px;
+}
+
+#about .desc_box1 li p:first-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#about .desc_box1 li:not(:last-child) {
+  margin-right: 30px;
+}
+
+#about .desc_box1 li p:last-child {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+#about .desc_box2 {
+  font-size: 13px;
+  padding: 0 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .desc_box2 span {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+  padding: 5px;
+}
+
+#about .desc_box2 span:first-child {
+  width: 200px;
+}
+
+#about .desc_box2 span:last-child {
+  width: 20px;
+}
+
+.property_box {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  perspective: 500px;
+}
+
+.property_box:nth-child(1) {
+  top: 30%;
+  left: 15%;
+}
+
+.property_box:nth-child(2) {
+  top: 30%;
+  right: 15%;
+}
+
+.property_box:nth-child(3) {
+  bottom: 15%;
+  left: 19%;
+}
+
+.property_box .poster.butterfly {
+  background: none;
+  box-shadow: none;
+  border: none;
+  animation: poter-ani2 1s infinite linear alternate;
+}
+
+.property_box:nth-child(4) .poster.butterfly .item {
+  width: 30%;
+}
+
+.property_box:nth-child(6) .poster.butterfly .item {
+  width: 30%;
+}
+
+.property_box .poster {
+  position: relative;
+  width: 120px;
+  height: 140px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgb(255 255 255 / 63%);
+  animation: poter-ani 1.4s infinite linear alternate;
+}
+
+@keyframes poter-ani {
+  0% {
+    transform: rotateY(-20deg);
+  }
+  100% {
+    transform: rotateY(20deg);
+  }
+}
+
+@keyframes poter-ani2 {
+  0% {
+    transform: rotateY(10deg);
+  }
+  100% {
+    transform: rotateY(-10deg);
+  }
+}
+
+.property_box .poster {
+  transform-style: preserve-3d;
+}
+
+.property_box .poster h2 {
+  font-family: "Poppins", sans-serif;
+  text-shadow: none;
+  color: white;
+  padding: 0.5em 0;
+  font-size: 0.8rem;
+  transform: translateZ(10px);
+}
+
+.property_box .poster .item {
+  position: absolute;
+  width: 70%;
+  left: 16%;
+  top: 22%;
+  transform: translateZ(10px);
+}
+
+.property_box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.property_box p {
+  padding: 0.5em 0;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: white;
+}
