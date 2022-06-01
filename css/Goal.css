@@ -1,5 +1,5 @@
 #goal {
-  background-image: url("../images/goal.jpg");
+  background-image: url("../images/img2.jpg");
   background-size: cover;
 }
 
@@ -59,19 +59,19 @@
 }
 
 #goal .goal_box .goal_detail:nth-child(1) .goal_detaile_imgbox {
-  background-image: url("../images/level_up.gif");
+  background-image: url("../images/study.gif");
   background-size: cover;
   background-position: center;
 }
 
 #goal .goal_box .goal_detail:nth-child(2) .goal_detaile_imgbox {
-  background-image: url("../images/fun.gif");
+  background-image: url("../images/study2.jpg");
   background-size: 120% 100%;
   background-position: center;
 }
 
 #goal .goal_box .goal_detail:nth-child(3) .goal_detaile_imgbox {
-  background-image: url("../images/together.gif");
+  background-image: url("../images/fun.gif");
   background-size: cover;
 }
 
