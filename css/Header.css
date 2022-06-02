@@ -11,6 +11,7 @@ header {
 header li a {
   position: relative;
   top: 0;
+  font-size: 25px;
   transition: top 0.3s ease;
 }
 
@@ -30,8 +31,8 @@ header .tooltip-text {
   font-weight: 600;
   border-radius: 6px;
   padding: 5px 0;
-  background: rgba(125, 204, 93, 0.349);
-  color: darkblue;
+  background: darkslateblue;
+  color: #e3d7ea;
 }
 
 header a:hover .tooltip-text {

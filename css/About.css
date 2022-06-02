@@ -1,8 +1,8 @@
 #about {
   position: relative;
-  background-image: url("../images/img1.jpg");
+  /* background-image: url("../images/img1.jpg"); */
   background-size: cover;
-  background-color: #ab88a0;
+  background-color: #a2a4dd;
 }
 
 #about .img_box {

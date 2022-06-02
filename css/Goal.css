@@ -1,6 +1,7 @@
 #goal {
   background-image: url("../images/img2.jpg");
   background-size: cover;
+  background-color: #032e42;
 }
 
 #goal .goal_box {
